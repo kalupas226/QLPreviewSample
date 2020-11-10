@@ -6,27 +6,22 @@
 //  Copyright © 2020 Aikawa Kenta. All rights reserved.
 //
 
-import ImageViewer_swift
 import UIKit
 import QuickLook
 
 class ViewController: UIViewController {
-    @IBOutlet weak var imageView: UIImageView!
-
-    var previewItem: URL {
-        let filePath = Bundle.main.path(forResource: "sample", ofType: "png")!
-        return URL(fileURLWithPath: filePath)
-    }
+    let previewItemNameList = ["food_kani_guratan_koura",
+                               "movie_refuban_man",
+                               "music_castanet_girl",
+                               "school_tsuugaku_woman",
+                               "syoujou_kaikinsyou"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.image = UIImage(named: "sample.png")
-        // closeIconのイメージは適当です
-        imageView.setupImageViewer(options: [.closeIcon(.remove)])
     }
 
     @IBAction func goToPreview(_ sender: Any) {
-        let previewController = SampleQLPreviewController()
+        let previewController = QLPreviewController()
         previewController.dataSource = self
         present(previewController, animated: true)
     }
@@ -35,11 +30,22 @@ class ViewController: UIViewController {
 
 extension ViewController: QLPreviewControllerDataSource {
     func numberOfPreviewItems(in controller: QLPreviewController) -> Int {
-        return 1
+        return previewItemNameList.count
     }
     
     func previewController(_ controller: QLPreviewController, previewItemAt index: Int) -> QLPreviewItem {
-        return self.previewItem as QLPreviewItem
+        let previewItemURLList: [URL] = previewItemNameList.map {
+            let path = Bundle.main.path(forResource: $0, ofType: "png")!
+            return URL(fileURLWithPath: path)
+        }
+        return previewItemURLList[index] as QLPreviewItem
+    }
+}
+
+extension ViewController: QLPreviewControllerDelegate {
+    func previewControllerDidDismiss(_ controller: QLPreviewController) {
+        let alert = UIAlertController(title: "DidDismiss", message: "this is alert", preferredStyle: .alert)
+        present(alert, animated: true)
     }
 }
 

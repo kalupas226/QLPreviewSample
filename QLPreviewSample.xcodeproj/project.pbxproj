@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B5C33F8255A453E00CA1DC5 /* music_castanet_girl.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B5C33F3255A453E00CA1DC5 /* music_castanet_girl.png */; };
+		1B5C33F9255A453E00CA1DC5 /* syoujou_kaikinsyou.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B5C33F4255A453E00CA1DC5 /* syoujou_kaikinsyou.png */; };
+		1B5C33FA255A453E00CA1DC5 /* school_tsuugaku_woman.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B5C33F5255A453E00CA1DC5 /* school_tsuugaku_woman.png */; };
+		1B5C33FB255A453E00CA1DC5 /* movie_refuban_man.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B5C33F6255A453E00CA1DC5 /* movie_refuban_man.png */; };
+		1B5C33FC255A453E00CA1DC5 /* food_kani_guratan_koura.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B5C33F7255A453E00CA1DC5 /* food_kani_guratan_koura.png */; };
 		1BC0253B24B9E42300EDA93B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC0253A24B9E42300EDA93B /* AppDelegate.swift */; };
 		1BC0253D24B9E42300EDA93B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC0253C24B9E42300EDA93B /* SceneDelegate.swift */; };
 		1BC0253F24B9E42300EDA93B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC0253E24B9E42300EDA93B /* ViewController.swift */; };
@@ -14,8 +19,6 @@
 		1BC0254424B9E42500EDA93B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BC0254324B9E42500EDA93B /* Assets.xcassets */; };
 		1BC0254724B9E42500EDA93B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BC0254524B9E42500EDA93B /* LaunchScreen.storyboard */; };
 		1BC0255224B9E42600EDA93B /* QLPreviewSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC0255124B9E42600EDA93B /* QLPreviewSampleTests.swift */; };
-		1BC0255D24B9E5EF00EDA93B /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BC0255C24B9E5EF00EDA93B /* sample.png */; };
-		1BC0255F24B9E8EC00EDA93B /* SampleQLPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC0255E24B9E8EC00EDA93B /* SampleQLPreviewController.swift */; };
 		4ABF514C93E7543DA99EBB37 /* Pods_QLPreviewSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A1F2C43CD49DF30EAF94BB /* Pods_QLPreviewSample.framework */; };
 		BDB977EE668F7AD723CDDCC6 /* Pods_QLPreviewSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2809AE89CAA8ED4EC2DB21 /* Pods_QLPreviewSampleTests.framework */; };
 /* End PBXBuildFile section */
@@ -32,6 +35,11 @@
 
 /* Begin PBXFileReference section */
 		0ED4880D408506FC2DD36C69 /* Pods-QLPreviewSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLPreviewSampleTests.release.xcconfig"; path = "Target Support Files/Pods-QLPreviewSampleTests/Pods-QLPreviewSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		1B5C33F3255A453E00CA1DC5 /* music_castanet_girl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music_castanet_girl.png; sourceTree = "<group>"; };
+		1B5C33F4255A453E00CA1DC5 /* syoujou_kaikinsyou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syoujou_kaikinsyou.png; sourceTree = "<group>"; };
+		1B5C33F5255A453E00CA1DC5 /* school_tsuugaku_woman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = school_tsuugaku_woman.png; sourceTree = "<group>"; };
+		1B5C33F6255A453E00CA1DC5 /* movie_refuban_man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movie_refuban_man.png; sourceTree = "<group>"; };
+		1B5C33F7255A453E00CA1DC5 /* food_kani_guratan_koura.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food_kani_guratan_koura.png; sourceTree = "<group>"; };
 		1BC0253724B9E42300EDA93B /* QLPreviewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QLPreviewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC0253A24B9E42300EDA93B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BC0253C24B9E42300EDA93B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,8 +51,6 @@
 		1BC0254D24B9E42600EDA93B /* QLPreviewSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QLPreviewSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC0255124B9E42600EDA93B /* QLPreviewSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QLPreviewSampleTests.swift; sourceTree = "<group>"; };
 		1BC0255324B9E42600EDA93B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BC0255C24B9E5EF00EDA93B /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
-		1BC0255E24B9E8EC00EDA93B /* SampleQLPreviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleQLPreviewController.swift; sourceTree = "<group>"; };
 		36A1F2C43CD49DF30EAF94BB /* Pods_QLPreviewSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QLPreviewSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD3037CA37CDAA988DF41C6 /* Pods-QLPreviewSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLPreviewSample.debug.xcconfig"; path = "Target Support Files/Pods-QLPreviewSample/Pods-QLPreviewSample.debug.xcconfig"; sourceTree = "<group>"; };
 		56A2D51C660676B630659C02 /* Pods-QLPreviewSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLPreviewSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-QLPreviewSampleTests/Pods-QLPreviewSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,8 +104,11 @@
 				1BC0253A24B9E42300EDA93B /* AppDelegate.swift */,
 				1BC0253C24B9E42300EDA93B /* SceneDelegate.swift */,
 				1BC0253E24B9E42300EDA93B /* ViewController.swift */,
-				1BC0255E24B9E8EC00EDA93B /* SampleQLPreviewController.swift */,
-				1BC0255C24B9E5EF00EDA93B /* sample.png */,
+				1B5C33F7255A453E00CA1DC5 /* food_kani_guratan_koura.png */,
+				1B5C33F6255A453E00CA1DC5 /* movie_refuban_man.png */,
+				1B5C33F3255A453E00CA1DC5 /* music_castanet_girl.png */,
+				1B5C33F5255A453E00CA1DC5 /* school_tsuugaku_woman.png */,
+				1B5C33F4255A453E00CA1DC5 /* syoujou_kaikinsyou.png */,
 				1BC0254024B9E42300EDA93B /* Main.storyboard */,
 				1BC0254324B9E42500EDA93B /* Assets.xcassets */,
 				1BC0254524B9E42500EDA93B /* LaunchScreen.storyboard */,
@@ -134,7 +143,6 @@
 				56A2D51C660676B630659C02 /* Pods-QLPreviewSampleTests.debug.xcconfig */,
 				0ED4880D408506FC2DD36C69 /* Pods-QLPreviewSampleTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -223,8 +231,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BC0254724B9E42500EDA93B /* LaunchScreen.storyboard in Resources */,
-				1BC0255D24B9E5EF00EDA93B /* sample.png in Resources */,
+				1B5C33FB255A453E00CA1DC5 /* movie_refuban_man.png in Resources */,
+				1B5C33FC255A453E00CA1DC5 /* food_kani_guratan_koura.png in Resources */,
+				1B5C33F9255A453E00CA1DC5 /* syoujou_kaikinsyou.png in Resources */,
 				1BC0254424B9E42500EDA93B /* Assets.xcassets in Resources */,
+				1B5C33FA255A453E00CA1DC5 /* school_tsuugaku_woman.png in Resources */,
+				1B5C33F8255A453E00CA1DC5 /* music_castanet_girl.png in Resources */,
 				1BC0254224B9E42300EDA93B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,7 +322,6 @@
 				1BC0253F24B9E42300EDA93B /* ViewController.swift in Sources */,
 				1BC0253B24B9E42300EDA93B /* AppDelegate.swift in Sources */,
 				1BC0253D24B9E42300EDA93B /* SceneDelegate.swift in Sources */,
-				1BC0255F24B9E8EC00EDA93B /* SampleQLPreviewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
