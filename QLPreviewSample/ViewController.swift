@@ -10,11 +10,13 @@ import UIKit
 import QuickLook
 
 class ViewController: UIViewController {
-    let previewItemNameList = ["food_kani_guratan_koura",
-                               "movie_refuban_man",
-                               "music_castanet_girl",
-                               "school_tsuugaku_woman",
-                               "syoujou_kaikinsyou"]
+    let previewItemNameList = [("food_kani_guratan_koura", "png"),
+                               ("movie_refuban_man", "png"),
+                               ("music_castanet_girl", "png"),
+                               ("school_tsuugaku_woman", "png"),
+                               ("syoujou_kaikinsyou", "png"),
+                               ("bgm_maoudamashii_fantasy15", "mp3"),
+                               ("sample-pdf", "pdf")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,7 @@ class ViewController: UIViewController {
     @IBAction func goToPreview(_ sender: Any) {
         let previewController = QLPreviewController()
         previewController.dataSource = self
+        previewController.delegate = self
         present(previewController, animated: true)
     }
     
@@ -32,11 +35,10 @@ extension ViewController: QLPreviewControllerDataSource {
     func numberOfPreviewItems(in controller: QLPreviewController) -> Int {
         return previewItemNameList.count
     }
-    
+
     func previewController(_ controller: QLPreviewController, previewItemAt index: Int) -> QLPreviewItem {
         let previewItemURLList: [URL] = previewItemNameList.map {
-            let path = Bundle.main.path(forResource: $0, ofType: "png")!
-            return URL(fileURLWithPath: path)
+            return Bundle.main.url(forResource: $0.0, withExtension: $0.1)!
         }
         return previewItemURLList[index] as QLPreviewItem
     }
@@ -44,7 +46,9 @@ extension ViewController: QLPreviewControllerDataSource {
 
 extension ViewController: QLPreviewControllerDelegate {
     func previewControllerDidDismiss(_ controller: QLPreviewController) {
-        let alert = UIAlertController(title: "DidDismiss", message: "this is alert", preferredStyle: .alert)
+        let alert = UIAlertController(title: "DidDismiss", message: nil, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(okAction)
         present(alert, animated: true)
     }
 }

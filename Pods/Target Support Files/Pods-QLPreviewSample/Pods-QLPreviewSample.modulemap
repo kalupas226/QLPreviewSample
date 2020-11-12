@@ -1,6 +1,0 @@
-framework module Pods_QLPreviewSample {
-  umbrella header "Pods-QLPreviewSample-umbrella.h"
-
-  export *
-  module * { export * }
-}
