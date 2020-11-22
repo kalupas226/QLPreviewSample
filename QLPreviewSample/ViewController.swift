@@ -18,6 +18,11 @@ class ViewController: UIViewController {
                                ("bgm_maoudamashii_fantasy15", "mp3"),
                                ("sample-pdf", "pdf")]
 
+    var previewItemURLList: [URL] {
+        let itemURLList = previewItemNameList.map { Bundle.main.url(forResource: $0.0, withExtension: $0.1)! }
+        return itemURLList
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -28,18 +33,14 @@ class ViewController: UIViewController {
         previewController.delegate = self
         present(previewController, animated: true)
     }
-    
 }
 
 extension ViewController: QLPreviewControllerDataSource {
     func numberOfPreviewItems(in controller: QLPreviewController) -> Int {
-        return previewItemNameList.count
+        return previewItemURLList.count
     }
 
     func previewController(_ controller: QLPreviewController, previewItemAt index: Int) -> QLPreviewItem {
-        let previewItemURLList: [URL] = previewItemNameList.map {
-            return Bundle.main.url(forResource: $0.0, withExtension: $0.1)!
-        }
         return previewItemURLList[index] as QLPreviewItem
     }
 }
