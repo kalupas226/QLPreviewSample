@@ -9,6 +9,11 @@
 import UIKit
 import QuickLook
 
+// 以下のサイトからリソースを使用させて頂いています
+// https://www.irasutoya.com/
+// http://onocom.net/blog/public-domain-sample-file/#i-2
+// https://maoudamashii.jokersounds.com/archives/bgm_maoudamashii_fantasy15.html
+
 class ViewController: UIViewController {
     let previewItemNameList = [("food_kani_guratan_koura", "png"),
                                ("movie_refuban_man", "png"),
